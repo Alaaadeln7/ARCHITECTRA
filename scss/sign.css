@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+main .container .head {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+  margin-left: 20px;
+}
+main .container .head .back {
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .container .head .back:hover {
+  color: #f4462f;
+}
+main .container .head h1 {
+  color: #f4462f;
+}
+main .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+main .container .content .form {
+  width: 40%;
+}
+main .container .content .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main .container .content .form form img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+main .container .content .form form input {
+  outline: none;
+  border: 1px solid #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+  color: #f4462f;
+}
+main .container .content .form form input[type=submit] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #f4462f;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+  font-size: 15px;
+  height: 45px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+main .container .content .form form input[type=submit]::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f4462f;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .container .content .form form input[type=submit]::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #f4462f;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .container .content .form form input[type=submit]:hover {
+  background-color: #fff;
+  color: #f4462f;
+}
+main .container .content .form form input[type=submit]:hover::after, main .container .content .form form input[type=submit]:hover::before {
+  width: 100%;
+}
+main .container .content .form form input[type=submit]:hover {
+  background-color: #00415d;
+  color: #fff;
+}
+main .container .content .form .change-img {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .container .content .form .change-img .update-img {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #f4462f;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+  font-size: 15px;
+  height: 45px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .container .content .form .change-img .update-img::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f4462f;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .container .content .form .change-img .update-img::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #f4462f;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .container .content .form .change-img .update-img:hover {
+  background-color: #fff;
+  color: #f4462f;
+}
+main .container .content .form .change-img .update-img:hover::after, main .container .content .form .change-img .update-img:hover::before {
+  width: 100%;
+}
+main .container .content .form .change-img input[type=file] {
+  display: none;
+}
+main .container .content .form p {
+  text-align: center;
+  margin-top: 5%;
+}
+main .container .content .form p button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #f4462f;
+  cursor: pointer;
+}
+main .container .content .img {
+  max-width: 40%;
+}
+main .container .content .img img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  main .container .content {
+    width: 100%;
+  }
+  main .container .content .form {
+    width: 100%;
+  }
+  main .container .content .img {
+    display: none;
+  }
+}
+
+@-webkit-keyframes vibration {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  50% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  75% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+@keyframes vibration {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  50% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  75% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
